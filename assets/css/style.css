@@ -33,40 +33,55 @@ li{
 aside{
     grid-area: aside;
     background-color: #fed9b7;
-    
+    display: flex;
+    flex-direction: column;
+     
 }
 aside h3{
     color: #bc4749;
     padding: 10px;
+    
 }
-section{
+ul{
+    padding: 0;
+    margin: 0;
+}
+.container-cards{
     grid-area: section;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
     background-color: #fef9ef;
 }
-.grid{
+
+.card{
     display: flex;
+    padding: 1rem;
+    padding-bottom: 2rem;
     flex-direction: column;
     align-items: center;
-    margin: 0.5rem;
-    width: 60%;
-    background-color: #ffcb77 ;
-    color: #0d659d;
+    color: rgb(13, 96, 151);
+    background-color: #ffcb77;
+    border-radius: 0.5rem;
 }
+
+
 .cuadrado{
     width: 90%;
     height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+ 
 }
 .cuadrado img{
     width: 90%;
     height: 90%;
 }
-button{
+.card-button{
     border: none;
     width: 80%;
     padding: 10px;
@@ -84,3 +99,6 @@ footer{
     align-items: center;
     color: #f7f7f3;
 }
+
+
+
